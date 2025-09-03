@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    Home
+    <SectionHero id="hero" />
     <SectionAbout id="about" />
     <SectionContact id="contact" />
   </div>
