@@ -86,9 +86,15 @@ const items = computed(() => [
           color="primary"
           variant="ghost"
           size="xl"
-          icon="i-heroicons-bars-2-solid"
           @click="isOpen = !isOpen"
-        />
+        >
+          <template #trailing>
+            <UIcon
+              name="i-heroicons-bars-2-solid"
+              class="w-6 sm:w-8 h-6 sm:h-8"
+            />
+          </template>
+        </UButton>
 
         <template #body>
           <UNavigationMenu
