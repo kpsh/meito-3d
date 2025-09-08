@@ -1,0 +1,32 @@
+[
+  {
+    "id": "stellar-engine-01",
+    "name": "Stellar Engine",
+    "short_description": "A hyper-realistic 3D model of a futuristic engine, perfect for sci-fi scenes and detailed mechanical renders.",
+    "image_url": "https://picsum.photos/600/400?random=1"
+  },
+  {
+    "id": "ancient-golem-03",
+    "name": "Ancient Golem",
+    "short_description": "A game-ready, low-poly golem character with intricate rock textures and mystical engravings. Fully rigged for animation.",
+    "image_url": "https://picsum.photos/600/400?random=2"
+  },
+  {
+    "id": "orbital-station-x7",
+    "name": "Orbital Station X7",
+    "short_description": "A sprawling, modular space station kitbash set. Create endless orbital habitats for your universe.",
+    "image_url": "https://picsum.photos/600/400?random=3"
+  },
+  {
+    "id": "cyberpunk-street-05",
+    "name": "Cyberpunk Street Asset Pack",
+    "short_description": "A comprehensive collection of neon signs, street props, and modular building facades for creating vibrant cyberpunk environments.",
+    "image_url": "https://picsum.photos/600/400?random=4"
+  },
+  {
+    "id": "dragon-wyvern-12",
+    "name": "Ice Wyvern",
+    "short_description": "A majestic ice wyvern model with detailed scales, 4K textures, and a full set of animations including flight and attack cycles.",
+    "image_url": "https://picsum.photos/600/400?random=5"
+  }
+]
