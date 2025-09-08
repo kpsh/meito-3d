@@ -84,7 +84,7 @@ const socialLinks = [
           variant="outline"
           class="flex flex-col gap-8 md:gap-12"
         >
-          <div class="aspect-square overflow-hidden rounded-3xl shadow-xl shadow-primary-500/10">
+          <div class="aspect-square overflow-hidden rounded-3xl shadow-xl shadow-primary-500/20">
             <iframe
               class="w-full h-full"
               src="https://www.openstreetmap.org/export/embed.html?bbox=139.64721679687503%2C35.562953482850745%2C139.88067626953128%2C35.79776624517103&amp;layer=mapnik"
@@ -93,7 +93,7 @@ const socialLinks = [
             />
           </div>
 
-          <div class="mt-6 flex gap-4 flex-wrap">
+          <div class="mt-8 flex gap-4 flex-wrap">
             <UButton
               v-for="link in socialLinks"
               :key="link.name"

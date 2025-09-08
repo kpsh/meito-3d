@@ -4,5 +4,6 @@
     <SectionAbout id="about" />
     <SectionFeaturedItems id="featured-items" />
     <SectionContact id="contact" />
+    <SectionCallToAction id="call-to-action" />
   </div>
 </template>
