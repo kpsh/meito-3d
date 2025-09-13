@@ -25,7 +25,7 @@ const footerLinks = [
 </script>
 
 <template>
-  <footer class="bg-elevated border-t border-default py-10">
+  <footer class="bg-elevated border-t border-default rounded-t-3xl py-10">
     <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div>
         <h2 class="text-xl font-bold tracking-wide mb-4">
