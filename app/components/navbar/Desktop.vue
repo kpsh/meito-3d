@@ -73,15 +73,29 @@ const items = computed(() => [
     },
   ],
 ])
+
+const { gsap } = useGsap()
+
+const navbarRef = ref()
+
+onMounted(() => {
+  gsap.from(navbarRef.value, {
+    opacity: 0,
+    y: -20,
+    duration: 1,
+    ease: 'power2.out',
+  })
+})
 </script>
 
 <template>
   <div
+    ref="navbarRef"
     :class="{
       'bg-elevated shadow-md': isScrolled,
       'bg-transparent': !isScrolled,
     }"
-    class="py-4 fixed w-full top-0 z-10 transition-colors delay-300"
+    class="py-4 fixed w-full top-0 z-20 transition-colors delay-300"
   >
     <UContainer>
       <UNavigationMenu

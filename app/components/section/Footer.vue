@@ -1,5 +1,11 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 const currentYear = useDateFormat(useNow(), 'YYYY')
+const { gsap } = useGsap()
+
+const footerRef = ref()
+const mainContentRef = ref()
+const linksRef = ref()
+const bottomRef = ref()
 
 const footerLinks = [
   {
@@ -22,12 +28,51 @@ const footerLinks = [
     ],
   },
 ]
+
+onMounted(() => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: footerRef.value,
+      start: 'top bottom',
+    },
+  })
+
+  tl.from(footerRef.value, {
+    y: '100%',
+    duration: 1,
+    ease: 'power3.out',
+  })
+    .from(
+      [mainContentRef.value, linksRef.value],
+      {
+        opacity: 0,
+        y: 80,
+        stagger: 0.15,
+        duration: 0.8,
+        ease: 'power2.out',
+      },
+      '-=0.5',
+    )
+    .from(
+      bottomRef.value,
+      {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        ease: 'power2.out',
+      },
+      '-=0.6',
+    )
+})
 </script>
 
 <template>
-  <footer class="bg-elevated border-t border-default rounded-t-3xl py-10">
+  <footer
+    ref="footerRef"
+    class="bg-elevated border-t border-default rounded-t-3xl py-10"
+  >
     <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div>
+      <div ref="mainContentRef">
         <h2 class="text-xl font-bold tracking-wide mb-4">
           Meitō3D
         </h2>
@@ -36,7 +81,10 @@ const footerLinks = [
         </p>
       </div>
 
-      <div class="grid grid-cols-2 gap-8">
+      <div
+        ref="linksRef"
+        class="grid grid-cols-2 gap-8"
+      >
         <div
           v-for="(section, index) in footerLinks"
           :key="index"
@@ -60,7 +108,10 @@ const footerLinks = [
         </div>
       </div>
 
-      <div class="col-span-1 md:col-span-full flex flex-col items-center space-y-4">
+      <div
+        ref="bottomRef"
+        class="col-span-1 md:col-span-full flex flex-col items-center space-y-4"
+      >
         <UButton
           icon="i-simple-icons-github"
           label="GitHub Repo"

@@ -64,10 +64,24 @@ const items = computed(() => [
     target: '_blank',
   },
 ])
+
+const { gsap } = useGsap()
+
+const navbarRef = ref()
+
+onMounted(() => {
+  gsap.from(navbarRef.value, {
+    opacity: 0,
+    y: -20,
+    duration: 1,
+    ease: 'power2.out',
+  })
+})
 </script>
 
 <template>
   <div
+    ref="navbarRef"
     :class="{
       'bg-elevated shadow-md': isScrolled,
       'bg-transparent': !isScrolled,
