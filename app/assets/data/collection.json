@@ -1,0 +1,313 @@
+[
+  {
+    "id": "katana-01",
+    "type": "Katana",
+    "name": "Katana 'Dragon's Fang'",
+    "short_description": "A masterfully crafted Katana with a deep hamon and a custom dragon tsuba, embodying strength and elegance.",
+    "image_url": "https://picsum.photos/600/400?random=1",
+    "tags": [
+      "Katana",
+      "Japanese",
+      "Sword",
+      "Traditional"
+    ],
+    "ratings": {
+      "average": 5,
+      "count": 2
+    },
+    "blade": [
+      {
+        "profile": "Shinogi-zukuri",
+        "length": {
+          "inch": 32,
+          "cm": 72
+        }
+      }
+    ],
+    "material": {
+      "condition": "Excellent",
+      "blade": "Tamahagane Steel",
+      "handle": "Ray Skin (Samegawa)",
+      "sheath": "Lacquer wood"
+    },
+    "is_certified": true,
+    "is_available": true
+  },
+  {
+    "id": "wakizashi-01",
+    "type": "Wakizashi",
+    "name": "Wakizashi 'Shadow Weeper'",
+    "short_description": "A precision-forged Wakizashi, ideal for close-quarters combat or as a companion blade. Known for its exceptional sharpness.",
+    "image_url": "https://picsum.photos/600/400?random=2",
+    "tags": [
+      "Wakizashi",
+      "Japanese",
+      "Sword",
+      "Companion"
+    ],
+    "ratings": {
+      "average": 4.5,
+      "count": 1
+    },
+    "blade": [
+      {
+        "profile": "Shobu-zukuri",
+        "length": {
+          "inch": 17.7,
+          "cm": 45
+        }
+      }
+    ],
+    "material": {
+      "condition": "Mint",
+      "blade": "Aogami Super Steel",
+      "handle": "Silk Ito over Ray Skin",
+      "sheath": "Ebony wood"
+    },
+    "is_certified": true,
+    "is_available": true
+  },
+  {
+    "id": "tanto-01",
+    "type": "Tanto",
+    "name": "Tanto 'Crimson Bloom'",
+    "short_description": "A beautifully simple Tanto with a distinctive curvature and a meticulously polished blade, perfect for collectors.",
+    "image_url": "https://picsum.photos/600/400?random=3",
+    "tags": [
+      "Tanto",
+      "Japanese",
+      "Knife",
+      "Collector's"
+    ],
+    "ratings": {
+      "average": 0,
+      "count": 0
+    },
+    "blade": [
+      {
+        "profile": "Hira-zukuri",
+        "length": {
+          "inch": 11,
+          "cm": 28
+        }
+      }
+    ],
+    "material": {
+      "condition": "Good",
+      "blade": "Shirogami Steel",
+      "handle": "Magnolia Wood",
+      "sheath": "Lacquer wood"
+    },
+    "is_certified": false,
+    "is_available": false
+  },
+  {
+    "id": "daisho-set-01",
+    "type": "Daisho Set",
+    "name": "Daisho 'Cloud & Mist'",
+    "short_description": "A stunning pair of Katana and Wakizashi, crafted to be a matched set. A symbol of status and martial prowess.",
+    "image_url": "https://picsum.photos/600/400?random=4",
+    "tags": [
+      "Katana",
+      "Wakizashi",
+      "Set",
+      "Japanese"
+    ],
+    "ratings": {
+      "average": 5,
+      "count": 1
+    },
+    "blade": [
+      {
+        "profile": "Shinogi-zukuri",
+        "length": {
+          "inch": 27.5,
+          "cm": 70
+        }
+      },
+      {
+        "profile": "Shobu-zukuri",
+        "length": {
+          "inch": 15.7,
+          "cm": 40
+        }
+      }
+    ],
+    "material": {
+      "condition": "Excellent",
+      "blade": "Tamahagane Steel",
+      "handle": "Silk Ito over Ray Skin",
+      "sheath": "Lacquer wood with inlay"
+    },
+    "is_certified": true,
+    "is_available": true
+  },
+  {
+    "id": "kitchen-knife-01",
+    "type": "Kitchen Knife",
+    "name": "Santoku 'Homura'",
+    "short_description": "A multi-purpose Santoku knife with a fiery Damascus pattern, offering superior balance and cutting performance for any kitchen.",
+    "image_url": "https://picsum.photos/600/400?random=5",
+    "tags": [
+      "Kitchen Knife",
+      "Knife",
+      "Japanese"
+    ],
+    "ratings": {
+      "average": 4.5,
+      "count": 2
+    },
+    "blade": [
+      {
+        "profile": "Santoku",
+        "length": {
+          "inch": 7,
+          "cm": 18
+        }
+      }
+    ],
+    "material": {
+      "condition": "Mint",
+      "blade": "Damascus Steel",
+      "handle": "Pakka wood",
+      "sheath": "Leather"
+    },
+    "is_certified": false,
+    "is_available": true
+  },
+  {
+    "id": "katana-02",
+    "type": "Katana",
+    "name": "Katana 'Iron Crane'",
+    "short_description": "A magnificent Katana with a polished iron tsuba and a gracefully curved blade. A symbol of Japanese craftsmanship.",
+    "image_url": "https://picsum.photos/600/400?random=6",
+    "tags": [
+      "Katana",
+      "Japanese",
+      "Sword",
+      "Traditional"
+    ],
+    "ratings": {
+      "average": 5,
+      "count": 1
+    },
+    "blade": [
+      {
+        "profile": "Shinogi-zukuri",
+        "length": {
+          "inch": 29,
+          "cm": 74
+        }
+      }
+    ],
+    "material": {
+      "condition": "Excellent",
+      "blade": "Tamahagane Steel",
+      "handle": "Ray Skin (Samegawa)",
+      "sheath": "Polished wood"
+    },
+    "is_certified": true,
+    "is_available": true
+  },
+  {
+    "id": "tanto-02",
+    "type": "Tanto",
+    "name": "Tanto 'Winter's Blossom'",
+    "short_description": "A compact and sturdy tanto with a clean, unadorned blade, reflecting the serene beauty of a winter landscape.",
+    "image_url": "https://picsum.photos/600/400?random=7",
+    "tags": [
+      "Tanto",
+      "Japanese",
+      "Knife",
+      "Minimalist"
+    ],
+    "ratings": {
+      "average": 4,
+      "count": 3
+    },
+    "blade": [
+      {
+        "profile": "Kanmuri-otoshi-zukuri",
+        "length": {
+          "inch": 10,
+          "cm": 25.4
+        }
+      }
+    ],
+    "material": {
+      "condition": "Used",
+      "blade": "Shirogami Steel",
+      "handle": "Silk",
+      "sheath": "Polished wood"
+    },
+    "is_certified": true,
+    "is_available": true
+  },
+  {
+    "id": "nagakado-01",
+    "type": "Nagakado",
+    "name": "Nagakado 'Serpent's Coil'",
+    "short_description": "An elongated sword with a dramatic, flowing blade, perfect for sweeping movements and long-range combat.",
+    "image_url": "https://picsum.photos/600/400?random=8",
+    "tags": [
+      "Sword",
+      "Japanese",
+      "Long"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 5
+    },
+    "blade": [
+      {
+        "profile": "Unokubi-zukuri",
+        "length": {
+          "inch": 38,
+          "cm": 96.5
+        }
+      }
+    ],
+    "material": {
+      "condition": "Excellent",
+      "blade": "Tamahagane Steel",
+      "handle": "Lacquer wood",
+      "sheath": "Ray Skin (Samegawa)"
+    },
+    "is_certified": true,
+    "is_available": false
+  },
+  {
+    "id": "yari-01",
+    "type": "Yari",
+    "name": "Yari 'Bamboo Splitter'",
+    "short_description": "A formidable spear with a sharp, straight blade, a symbol of a samurai's steadfast resolve and martial discipline.",
+    "image_url": "https://picsum.photos/600/400?random=9",
+    "tags": [
+      "Spear",
+      "Japanese",
+      "Polearm",
+      "Traditional"
+    ],
+    "ratings": {
+      "average": 4.2,
+      "count": 4
+    },
+    "blade": [
+      {
+        "profile": "Sankaku-yari",
+        "length": {
+          "inch": 12,
+          "cm": 30.5
+        }
+      }
+    ],
+    "material": {
+      "condition": "Good",
+      "blade": "Aogami Super Steel",
+      "handle": "Oak wood",
+      "sheath": "N/A"
+    },
+    "is_certified": false,
+    "is_available": true
+  }
+]

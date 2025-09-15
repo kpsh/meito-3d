@@ -6,7 +6,7 @@ const isMobile = breakpoint.smaller('md')
 </script>
 
 <template>
-  <main>
+  <div>
     <NavbarMobile v-if="isMobile" />
     <NavbarDesktop v-else />
 
@@ -15,5 +15,5 @@ const isMobile = breakpoint.smaller('md')
     </UContainer>
 
     <SectionFooter />
-  </main>
+  </div>
 </template>

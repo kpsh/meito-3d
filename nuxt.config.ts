@@ -26,6 +26,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    },
+  },
+
   compatibilityDate: '2025-07-16',
 
   eslint: {
