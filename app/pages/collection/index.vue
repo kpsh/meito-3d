@@ -34,16 +34,18 @@ onMounted(() => {
     duration: 0.8,
     ease: 'power3.out',
   })
-  tl.from(
-    filterCollectionRef.value.$el,
-    {
-      opacity: 0,
-      x: -50,
-      duration: 0.8,
-      ease: 'power2.out',
-    },
-    '-=0.5',
-  )
+  if (filterCollectionRef.value) {
+    tl.from(
+      filterCollectionRef.value.$el,
+      {
+        opacity: 0,
+        x: -50,
+        duration: 0.8,
+        ease: 'power2.out',
+      },
+      '-=0.5',
+    )
+  }
   tl.from(
     mobileButtonsRef.value.children,
     {
