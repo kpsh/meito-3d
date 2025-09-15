@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useBreakpoints, breakpointsTailwind } from '@vueuse/core'
 import type { FilterState } from '@/types/filters'
 
 const { filters, filteredItems, allTags, allMaterials, allConditions, bladeLengthRange, clearFilters } = useCollectionFilters()
@@ -6,6 +7,10 @@ const { filters, filteredItems, allTags, allMaterials, allConditions, bladeLengt
 const handleUpdateFilters = (newFilters: FilterState) => {
   Object.assign(filters, newFilters)
 }
+const breakpoint = useBreakpoints(breakpointsTailwind)
+const isCompact = breakpoint.smaller('lg')
+
+const isFiltersVisible = ref(false)
 </script>
 
 <template>
@@ -18,7 +23,30 @@ const handleUpdateFilters = (newFilters: FilterState) => {
       class="mt-32 md:mt-40"
     />
     <div class="flex flex-col gap-8 lg:flex-row mb-24 md:mb-32">
+      <div class="flex justify-between items-center gap-2 -mb-2">
+        <UButton
+          v-if="isCompact"
+          size="xl"
+          color="primary"
+          :block="false"
+          :variant="isFiltersVisible ? 'solid' : 'subtle'"
+          :label="isFiltersVisible ? 'Hide Filters' : 'Show Filters'"
+          :icon="isFiltersVisible ? 'i-lucide-filter-x' : 'i-lucide-filter'"
+          @click="isFiltersVisible = !isFiltersVisible"
+        />
+        <UButton
+          v-if="isCompact"
+          icon="i-lucide-rotate-ccw"
+          color="neutral"
+          variant="subtle"
+          size="xl"
+          aria-label="Clear Filters"
+          @click="clearFilters"
+        />
+      </div>
+
       <FilterCollection
+        v-if="isFiltersVisible || !isCompact"
         :filters="filters"
         :all-tags="allTags"
         :all-materials="allMaterials"

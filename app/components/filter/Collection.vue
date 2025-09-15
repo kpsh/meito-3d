@@ -114,7 +114,7 @@ const accordionItems = computed(() => [{
         color="neutral"
         variant="link"
         size="md"
-        class="absolute right-5 top-5"
+        class="absolute right-5 top-5 hidden lg:block"
         aria-label="Clear Filters"
         @click="clearFilters"
       />
