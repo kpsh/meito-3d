@@ -136,6 +136,35 @@ if (filters.bladeLength.min === 0 && filters.bladeLength.max === 100) {
 }
 
 export const useCollectionFilters = () => {
+  const route = useRoute()
+  const router = useRouter()
+
+  if (route.query.c) {
+    filters.searchQuery = String(route.query.c)
+  }
+
+  const updateUrl = useDebounceFn(() => {
+    const query = { ...route.query }
+    if (filters.searchQuery) {
+      query.c = filters.searchQuery
+    }
+    else {
+      delete query.c
+    }
+    router.push({ query })
+  }, 500)
+
+  watch(() => filters.searchQuery, updateUrl)
+
+  watch(
+    () => route.query.c,
+    (newQuery, oldQuery) => {
+      if (newQuery !== filters.searchQuery && newQuery !== oldQuery) {
+        filters.searchQuery = newQuery ? String(newQuery) : ''
+      }
+    },
+  )
+
   return {
     filters,
     filteredItems,
