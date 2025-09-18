@@ -5,3 +5,5 @@
 	--font-serif: "Noto Serif", serif;
 	--font-sans: "Inter", sans-serif;
 }
+
+@import "./button.css"

@@ -44,15 +44,16 @@ defineProps<{
           icon="i-lucide-flame"
           label="Build!"
           size="lg"
+          variant="ghost"
           color="primary"
-          square
-          variant="subtle"
+          class="fancy-button"
         />
         <UButton
           :to="`/collection/${item.id}`"
           label="View"
-          variant="ghost"
-          color="primary"
+          size="lg"
+          variant="soft"
+          color="neutral"
           trailing-icon="i-lucide-arrow-right"
         />
       </div>

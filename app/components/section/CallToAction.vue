@@ -69,8 +69,9 @@ onMounted(() => {
           icon="i-lucide-flame"
           trailing
           size="xl"
+          variant="ghost"
           color="primary"
-          variant="solid"
+          class="fancy-button"
         />
         <UButton
           label="View Our Collection"

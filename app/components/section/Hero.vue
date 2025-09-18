@@ -56,7 +56,7 @@ onMounted(() => {
           color="primary"
           label="How it works"
           trailing-icon="i-lucide-chevrons-right"
-          class="p-3 sm:p-5 px-6 sm:px-10 text-xl sm:text-2xl font-medium rounded-full border-2 border-primary/70 transition-colors"
+          class="fancy-button fancy-lg"
         />
         <UButton
           variant="link"

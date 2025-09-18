@@ -131,8 +131,10 @@ onMounted(() => {
                 type="submit"
                 size="xl"
                 label="Send Message"
+                variant="ghost"
                 color="primary"
                 trailing-icon="i-heroicons-paper-airplane"
+                class="fancy-button"
               />
             </div>
           </UForm>

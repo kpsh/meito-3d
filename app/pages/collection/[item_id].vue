@@ -22,7 +22,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="min-h-screen px-4 lg:px-24 py-16 flex flex-col gap-8">
+  <main class="min-h-screen px-4 lg:px-24 py-16 flex flex-col gap-8">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 mt-20 md:mt-24 items-start">
       <div class="flex flex-col gap-8">
         <ReusableHeadline
@@ -65,5 +65,5 @@ useSeoMeta({
     </div>
 
     <TabsItemData :item="item" />
-  </div>
+  </main>
 </template>
