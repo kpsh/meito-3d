@@ -22,7 +22,11 @@ const alignClass = computed(() => {
   if (props.align === 'right') return 'text-right items-end'
   return 'text-center items-center'
 })
-const colorClass = computed(() => props.color === 'primary' ? 'text-primary' : 'text-highlighted')
+const colorClass = computed(() =>
+  props.color === 'primary'
+    ? 'text-primary text-shadow-sm text-shadow-primary-600'
+    : 'text-highlighted text-shadow-sm text-shadow-neutral-500',
+)
 const titleSizeClass = computed(() => {
   if (props.size === 'md') return 'text-xl md:text-2xl'
   if (props.size === 'xl') return 'text-3xl md:text-4xl'

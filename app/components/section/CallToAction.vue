@@ -31,17 +31,17 @@ onMounted(() => {
       },
       '-=0.8',
     )
-    .from(
-      buttonsRef.value.children,
-      {
-        opacity: 0,
-        y: 30,
-        stagger: 0.2,
-        duration: 0.8,
-        ease: 'power2.out',
-      },
-      '-=0.5',
-    )
+    // .from(
+    //   buttonsRef.value.children,
+    //   {
+    //     opacity: 0,
+    //     y: 30,
+    //     stagger: 0.2,
+    //     duration: 0.8,
+    //     ease: 'power2.out',
+    //   },
+    //   '-=0.5',
+    // )
 })
 </script>
 
