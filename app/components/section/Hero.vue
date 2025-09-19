@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { gsap } = useGsap()
+const { openModal } = useModal()
 
 const heroSectionRef = ref()
 const heroContentRef = ref()
@@ -40,16 +41,16 @@ onMounted(() => {
       ref="heroBgRef"
       src="@/assets/images/herobg.png"
       alt="Hero Background"
-      class="absolute inset-0 w-full h-full object-cover"
+      class="absolute inset-0 h-full w-full object-cover"
     >
     <div
       ref="heroContentRef"
-      class="max-w-4xl mx-auto relative z-10 flex flex-col items-center md:items-start justify-between h-full pt-44 pb-28"
+      class="relative z-10 mx-auto flex h-full max-w-4xl flex-col items-center justify-between pb-28 pt-44 md:items-start"
     >
-      <h1 class="text-5xl xs:text-6xl sm:text-7xl font-serif font-bold text-highlighted">
+      <h1 class="font-serif text-5xl font-bold text-highlighted xs:text-6xl sm:text-7xl">
         Meitö 3D
       </h1>
-      <div class="md:self-end flex flex-col justify-center items-center gap-1">
+      <div class="flex flex-col items-center justify-center gap-1 md:self-end">
         <UButton
           size="xl"
           variant="ghost"
@@ -57,6 +58,12 @@ onMounted(() => {
           label="How it works"
           trailing-icon="i-lucide-chevrons-right"
           class="fancy-button fancy-lg"
+          @click="openModal(
+            'how-it-works',
+            {
+              title: 'How It Works',
+            },
+          )"
         />
         <UButton
           variant="link"
