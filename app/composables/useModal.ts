@@ -1,15 +1,16 @@
 import HowItWorks from '~/components/content/HowItWorks.vue'
+import Room from '~/components/content/Room.vue'
 import ModalWrapper from '~/components/ModalWrapper.vue'
 
 export const modalContentMap = {
-  'how-it-works': HowItWorks,
+  // 'how-it-works': HowItWorks,
+  room: Room,
 } satisfies Record<string, Component>
 
 export type ModalContentType = keyof typeof modalContentMap
 
 export interface ModalProps {
-  title: string
-  description: string
+  title?: string
   fullscreen?: boolean
   width?: string
 }

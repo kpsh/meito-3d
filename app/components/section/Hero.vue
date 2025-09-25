@@ -59,9 +59,10 @@ onMounted(() => {
           trailing-icon="i-lucide-chevrons-right"
           class="fancy-button fancy-lg"
           @click="openModal(
-            'how-it-works',
+            'room',
             {
               title: 'How It Works',
+              fullscreen: true,
             },
           )"
         />
@@ -70,6 +71,7 @@ onMounted(() => {
           color="neutral"
           label="Explore collection"
           size="xl"
+          to="/collection"
           class="text-default hover:text-highlighted hover:underline decoration-2"
         />
       </div>

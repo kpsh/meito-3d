@@ -1,12 +1,18 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="space-y-4 p-4 text-center">
-    <h3 class="text-lg font-bold">
-      How It Works
-    </h3>
-    <p class="text-neutral">
-      This content is dynamically loaded into the modal container.
-    </p>
-  </div>
+  <TresCanvas
+    clear-color="rgba(0,0,0,0)"
+    window-size
+  >
+    <TresPerspectiveCamera
+      :position="[3, 3, 3]"
+      :look-at="[0, 0, 0]"
+    />
+    <TresMesh>
+      <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
+      <TresMeshBasicMaterial color="orange" />
+    </TresMesh>
+    <TresAmbientLight :intensity="1" />
+  </TresCanvas>
 </template>

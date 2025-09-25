@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@vueuse/nuxt',
+    '@tresjs/nuxt',
   ],
   ssr: false,
   devtools: { enabled: true },

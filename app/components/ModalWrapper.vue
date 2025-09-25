@@ -4,22 +4,36 @@ const props = defineProps<{
   modalProps: Record<string, any>
 }>()
 
+const { contentComponent, modalProps } = props
 const emit = defineEmits(['close'])
 </script>
 
 <template>
   <UModal
-    :title="props.modalProps.title"
-    :description="props.modalProps.description"
-    aria-describedby="modal"
-    :fullscreen="props.modalProps.fullscreen"
-    :ui="{
-      width: props.modalProps.width,
-    }"
+    :fullscreen="modalProps.fullscreen"
+    class="rounded-3xl"
     @close="emit('close')"
   >
-    <template #body>
-      <component :is="props.contentComponent" />
+    <template #content>
+      <div class="px-4 py-3 flex items-center justify-between">
+        <h3
+          v-if="modalProps.title"
+          class="text-xl text-default font-bold"
+        >
+          {{ modalProps.title }}
+        </h3>
+        <UButton
+          color="neutral"
+          variant="ghost"
+          icon="i-lucide-x"
+          class="ml-auto rounded-full fancy-button"
+          @click="emit('close')"
+        />
+      </div>
+
+      <div class="p-4">
+        <component :is="contentComponent" />
+      </div>
     </template>
   </UModal>
 </template>

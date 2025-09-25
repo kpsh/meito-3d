@@ -17,6 +17,7 @@
     "@nuxt/image": "^1.11.0",
     "@nuxt/scripts": "^0.11.13",
     "@nuxt/ui": "^3.3.4",
+    "@tresjs/cientos": "^4.3.1",
     "@unhead/vue": "^2.0.14",
     "gsap": "^3.13.0",
     "nuxt": "^4.1.2",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.9.0",
+    "@tresjs/nuxt": "^4.0.0",
     "@vueuse/nuxt": "^13.9.0",
     "eslint": "^9.35.0",
     "typescript": "^5.9.2"
